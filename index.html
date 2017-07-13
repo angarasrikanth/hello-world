@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropdown{
+	position:relative;
+	display:inline-block;
+}
+.dropdown-content{
+	display:none;
+	cursor:pointer;
+	background-color:#f9f9f9;
+	min-width:160px;
+	padding:10px 15px;
+	z-index:1;
+}
+dropdown:hover.drop-content{
+	display:block;
+}
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0px;
+	width:100%;
+	background-color:black;
+	height:10%;
+	overflow:hidden;
+	position:fixed;
+	
+}
+li {
+	float:left;
+	padding:25px;
+}
+	
+ li a{
+	display:block;
+	
+	padding: 4px 8px;
+	
+	text-decoration:none;
+text-align:centre;
+	
+}
+	
+li a:hover{
+	background-color:green;
+ li a.active{
+	background-color:green;
+	color:white;
+
+}
+  li a:hover:not(.active){
+	background-color:#555;
+	color:white;
+	
+</style>
+</head>
+<body>
+
+
+ 	<ul>
+		<li><a class="active" href="#home">Home</a></li>
+		<li><a href="#News">News</a></li>
+	<div >	<li><a class="dropdown" href="#contact">Contact</a></li></div>
+<div class="dropdown-content"><p>Finally i got this!!</p></div>
+		<li><a href="#about us">about us</a></li>
+	</ul> 
+	
+	<div style=padding:8%;>
+ <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+</body>
+</html>
